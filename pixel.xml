@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="zuk-devs" fetch="https://github.com/zuk-devs/" push="ssh://git@github.com/zuk-devs/"/>
+
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu" name="gcc-prebuilts" remote="zuk-devs" revision="master"/>
+        <project path="device/zuk/msm8996-common" name="zuk-devs/android_device_zuk_msm8996-common" revision="9x-caf" remote="zuk-devs" />
+        <project path="device/zuk/z2_row" name="zuk-devs/android_device_zuk_z2_row" revision="9x-caf" remote="zuk-devs" />
+        <project path="vendor/zuk" name="zuk-devs/android_vendor_zuk" revision="lineage-16.0" remote="zuk-devs" />
+        <project path="kernel/zuk/msm8996" name="dd3boh/android_kernel_zuk_msm8996" revision="lineage-16.0" remote="github" />
+        <project path="packages/apps/Snap" name="arco/android_packages_apps_Snap" revision="lineage-16.0" remote="github" />
+        
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github"/>
+	<project path="vendor/qcom/opensource/dataservices/" name="LineageOS/android_vendor_qcom_opensource_dataservices" revision="lineage-16.0" />
+  
+
+
+
+  
+
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+</manifest>
